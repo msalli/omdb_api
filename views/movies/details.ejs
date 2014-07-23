@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Movie Search Results</title>
+  </head>
+  <body>
+   <h2>More Details</h2>
+   
+  <form method="post" action="/favorites">
+    <input type="submit" value="Favorite" name="addFave"> 
+  </form>
+
+   <ul>
+      <li> <img src="<%= details.Poster %>"></a> </li>
+      <h1><%= details.Title%></h1>
+        <li> <%= details.Plot %> </li>
+        <li> <%= details.Actors %> </li>
+        <li> <%= details.Director %> </li>
+        <li> <%= details.Year %> </li>
+        <li> <%= details.Rated %> </li>
+        <li> <%= details.Released %> </li>
+        <li> <%= details.Runtime %> </li>
+        <li> <%= details.Awards %> </li>
+        <li> <%= details.Genere %> </li>
+   </ul>
+  
+
+  </body>
+</html>
