@@ -6,13 +6,10 @@
   <body>
    <h2>Movies Related to Your Search: </h2>
    <ul>
-    <% movieList.forEach(function (movie) { %>
-      <li> <%= movie.Title %> </li>
-
+    <% movieList.forEach(function (movie, index) { %>
+      <li> <a href="details/<%= movie.imdbID %>"> <%= movie.Title %> </a> </li>
     <% }) %>
    </ul>
 
-
-    
   </body>
 </html>
